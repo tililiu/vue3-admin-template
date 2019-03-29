@@ -91,26 +91,6 @@ export default [
         ]
     },
     {
-        path: '/components',
-        name: 'components',
-        meta: {
-            icon: 'logo-buffer',
-            title: '组件'
-        },
-        component: Main,
-        children: [
-            {
-                path: 'org_tree_page',
-                name: 'org_tree_page',
-                meta: {
-                    icon: 'ios-people',
-                    title: '组织结构树'
-                },
-                component: () => import('@/view/components/org-tree')
-            }
-        ]
-    },
-    {
         path: '/401',
         name: 'error_401',
         meta: {
