@@ -14,7 +14,10 @@ module.exports = {
     }],
     'no-undef': 'off',
     'camelcase': 'off',
-    "indent": ["error", 4]
+    "indent": ["error", 4, { "SwitchCase": 1 }],
+    "quotes": [2, "single"],
+    "semi": ["error", "always"],
+    "no-unused-vars": 2,
   },
   parserOptions: {
     parser: 'babel-eslint'
