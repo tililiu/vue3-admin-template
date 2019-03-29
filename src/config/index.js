@@ -2,7 +2,7 @@ export default {
     /**
      * @description 配置显示在浏览器标签的title
      */
-    title: 'iView-admin',
+    title: '水务营收系统',
     /**
      * @description token在Cookie中存储的天数，默认1天
      */
@@ -29,7 +29,7 @@ export default {
      */
     plugin: {
         'error-store': {
-            showInHeader: true, // 设为false后不会在顶部显示错误日志徽标
+            showInHeader: false, // 设为false后不会在顶部显示错误日志徽标
             developmentOff: true // 设为true后在开发环境不会收集错误信息，方便开发中排查错误
         }
     }
