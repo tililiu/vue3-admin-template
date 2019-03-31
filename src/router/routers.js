@@ -91,6 +91,51 @@ export default [
         ]
     },
     {
+        path: '/user',
+        name: 'user',
+        component: Main,
+        children: [
+            {
+                path: 'list',
+                name: 'list',
+                meta: {
+                    icon: 'md-people',
+                    title: '客户管理'
+                },
+                component: () => import('@/view/user/user-list')
+            }
+        ]
+    },
+    {
+        path: '/water_meter',
+        name: 'water_meter',
+        meta: {
+            icon: 'md-people',
+            title: '水表管理'
+        },
+        component: Main,
+        children: [
+            {
+                path: 'water_meter_list',
+                name: 'water_meter_list',
+                meta: {
+                    icon: 'md-people',
+                    title: '水表列表'
+                },
+                component: () => import('@/view/water-meter/water-meter-list')
+            },
+            {
+                path: 'water_meter_error',
+                name: 'water_meter_error',
+                meta: {
+                    icon: 'md-people',
+                    title: '异常管理'
+                },
+                component: () => import('@/view/water-meter/water-meter-error')
+            }
+        ]
+    },
+    {
         path: '/401',
         name: 'error_401',
         meta: {
